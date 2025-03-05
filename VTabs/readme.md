@@ -1,14 +1,15 @@
-# v-select
+# v-tabs
 
-#### 1. Mapping v-select with a collection
+#### 1. Mapping v-tabs with a collection
 
 ---
 
-![](vSelect1.png)
+![](VTabs1.png)
 
 ```html
-<v-select variant="outlined" density="compact" label="Category" v-model="category" item-title="text" :hint="category" placeholder="Please select category" :items="categories"></v-select>
- 
+    <v-tabs v-model="tab" color="primary">
+        <v-tab v-for="(item, index) in categories" :key="index" :text="item.text"  :value="item.value"></v-tab>
+    </v-tabs>
 ```
 ```js
 setup(){
