@@ -11,6 +11,12 @@
         <v-tab v-for="(item, index) in categories" :key="index" :text="item.text"  :value="item.value"></v-tab>
     </v-tabs>
 ```
+or 
+```html
+   <v-tabs color="primary" :value="tab" @update:modelValue="updateFn">
+    <v-tab v-for="(item, index) in categories" :key="index" :text="item.text"  :value="item.value"></v-tab>
+   </v-tabs>
+```
 ```js
 setup(){
         const categories = [
