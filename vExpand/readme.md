@@ -2,7 +2,11 @@
 
 ---
 
-VExpand responsive
+Warning: there a bad event handling, because is limited to the scope, so It's hard to trigger event on page (outside component)
+
+Example: I need pagination disabled when panel is expand
+
+Another problem, is to manage nested transition because v-expansion-panel make inner DOM manipulation that doesn't permit to trigger animation properly
 
 ![](img.png)
 
@@ -31,3 +35,7 @@ VExpand responsive
     </v-expansion-panel>
 </v-expansion-panels>
 ````
+*Note: Another implementation of expand into vDatable*
+
+
+*Lead: Opsealog -> Bourbon data management*

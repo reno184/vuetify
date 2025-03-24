@@ -47,3 +47,4 @@ property show-expand, automatically add column to carry expand/collapse button
 
 
 ````
+Another example with slot:item (Opsealog -> bourbon data management)

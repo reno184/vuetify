@@ -22,3 +22,6 @@
             </v-col>
         </v-row>
 ```
+
+``variant="text"`` remove shadow
+prefer to use ``slim`` than `` size="'small"``...better style
