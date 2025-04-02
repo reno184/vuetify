@@ -118,6 +118,12 @@ into css
     background:var(--v-grey-lighten1);
   }
 ```
+Carefull : sometime variable return rgb
+```css
+.myClass {
+    background: rgb(var(--v-theme-background));
+  }
+```
 
 ### sass variables vs theme variables 
 **Key Differences:**
